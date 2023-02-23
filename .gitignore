@@ -4,5 +4,38 @@ node_modules
 .nitro
 .cache
 .output
+*.local
+
+# dotenv environment variables file
 .env
+
+# Nuxt generate
 dist
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Serverless directories
+.serverless
+
+# IDE / Editor
+.idea
+
+# Service worker
+sw.*
+*.sw?
+
+# macOS
+.DS_Store
+
+# Vim swap files
+*.swp
+
+# Editor directories and files
+# .vscode/
+.vscode/typescript.code-snippets
+!.vscode/extensions.json
+.vscode/settings.json

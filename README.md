@@ -1,6 +1,17 @@
 # Nuxt 3 Minimal Starter
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+
+## Features
+
+* ⚡️ [Nuxt 3](https://github.com/nuxt/nuxt), [pnpm](https://pnpm.io/) - super fast
+
+## TODO
+
+* 🍍 [Official Vue State & Store Management (Pinia)](https://pinia.vuejs.org/)
+* 🌊 [TailwindCSS](https://tailwindcss.com/), [tailwindcss-aspect-ratio](https://github.com/tailwindlabs/tailwindcss-aspect-ratio) & [tailwindcss-forms](https://github.com/tailwindlabs/tailwindcss-forms)
+* 📱 Mobile Detect module [@nuxtjs/device](https://www.npmjs.com/package/@nuxtjs/device/v/3.0.0?activeTab=readme)
+* ✨ Eslint & lint-staged
+* 🐕 Husky
 
 ## Setup
 
