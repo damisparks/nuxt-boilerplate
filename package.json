@@ -10,5 +10,8 @@
   "devDependencies": {
     "@nuxtjs/tailwindcss": "6.4.1",
     "nuxt": "^3.2.2"
+  },
+  "dependencies": {
+    "@tailwindcss/aspect-ratio": "0.4.2"
   }
 }

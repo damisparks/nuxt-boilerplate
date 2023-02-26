@@ -2,7 +2,11 @@ lockfileVersion: 5.4
 
 specifiers:
   '@nuxtjs/tailwindcss': 6.4.1
+  '@tailwindcss/aspect-ratio': 0.4.2
   nuxt: ^3.2.2
+
+dependencies:
+  '@tailwindcss/aspect-ratio': 0.4.2
 
 devDependencies:
   '@nuxtjs/tailwindcss': 6.4.1
@@ -1259,6 +1263,12 @@ packages:
       picomatch: 2.3.1
       rollup: 3.17.2
     dev: true
+
+  /@tailwindcss/aspect-ratio/0.4.2:
+    resolution: {integrity: sha512-8QPrypskfBa7QIMuKHg2TA7BqES6vhBrDLOv8Unb6FcFyd3TjKbc6lcmb9UPQHxfl24sXoJ41ux/H7qQQvfaSQ==}
+    peerDependencies:
+      tailwindcss: '>=2.0.0 || >=3.0.0 || >=3.0.0-alpha.1'
+    dev: false
 
   /@trysound/sax/0.2.0:
     resolution: {integrity: sha512-L7z9BgrNEcYyUYtF+HaEfiS5ebkh9jXqbszz7pC0hRBPaatV0XjSD3+eHrpqFemQfgwiFF0QPIarnIihIDn7OA==}
