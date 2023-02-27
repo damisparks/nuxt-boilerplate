@@ -5,6 +5,7 @@
 
 * ⚡️ [Nuxt 3](https://github.com/nuxt/nuxt), [pnpm](https://pnpm.io/) - super fast
 * 🌊 [TailwindCSS](https://tailwindcss.com/), [tailwindcss-aspect-ratio](https://github.com/tailwindlabs/tailwindcss-aspect-ratio) & [tailwindcss-forms](https://github.com/tailwindlabs/tailwindcss-forms)
+* Add [Google fonts](https://github.com/nuxt-community/google-fonts-module)
 
 
 ## TODO
