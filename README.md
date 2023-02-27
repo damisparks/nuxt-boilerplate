@@ -4,14 +4,16 @@
 ## Features
 
 * ⚡️ [Nuxt 3](https://github.com/nuxt/nuxt), [pnpm](https://pnpm.io/) - super fast
+* 🌊 [TailwindCSS](https://tailwindcss.com/), [tailwindcss-aspect-ratio](https://github.com/tailwindlabs/tailwindcss-aspect-ratio) & [tailwindcss-forms](https://github.com/tailwindlabs/tailwindcss-forms)
+
 
 ## TODO
 
 * 🍍 [Official Vue State & Store Management (Pinia)](https://pinia.vuejs.org/)
-* 🌊 [TailwindCSS](https://tailwindcss.com/), [tailwindcss-aspect-ratio](https://github.com/tailwindlabs/tailwindcss-aspect-ratio) & [tailwindcss-forms](https://github.com/tailwindlabs/tailwindcss-forms)
 * 📱 Mobile Detect module [@nuxtjs/device](https://www.npmjs.com/package/@nuxtjs/device/v/3.0.0?activeTab=readme)
 * ✨ Eslint & lint-staged
 * 🐕 Husky
+* [Nuxt Image](https://github.com/nuxt/image#readme)
 
 ## Setup
 

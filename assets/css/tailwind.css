@@ -1,0 +1,14 @@
+/* https://tailwindcss.com/docs/installation */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer {
+  html,
+  body {
+    /* font-family: "Montserrat", sans-serif; */
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+  }
+}
