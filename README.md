@@ -1,6 +1,5 @@
 # Nuxt 3 Minimal Starter
 
-
 ## Features
 
 * ⚡️ [Nuxt 3](https://github.com/nuxt/nuxt), [pnpm](https://pnpm.io/) - super fast
@@ -9,7 +8,7 @@
 
 ## TODO
 
-* Add [Google fonts](https://github.com/nuxt-community/google-fonts-module)
+* [Google fonts](https://github.com/nuxt-community/google-fonts-module) *waiting the last release*
 * 🍍 [Official Vue State & Store Management (Pinia)](https://pinia.vuejs.org/)
 * 📱 Mobile Detect module [@nuxtjs/device](https://www.npmjs.com/package/@nuxtjs/device/v/3.0.0?activeTab=readme)
 * ✨ Eslint & lint-staged
