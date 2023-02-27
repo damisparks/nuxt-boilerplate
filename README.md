@@ -1,6 +1,5 @@
 # Nuxt 3 Minimal Starter
 
-
 ## Features
 
 * ⚡️ [Nuxt 3](https://github.com/nuxt/nuxt), [pnpm](https://pnpm.io/) - super fast
