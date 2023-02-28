@@ -3,10 +3,9 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer {
-  html,
-  body {
-    /* font-family: "Montserrat", sans-serif; */
+@layer base {
+  html {
+    font-family: "Montserrat", sans-serif;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     box-sizing: border-box;
