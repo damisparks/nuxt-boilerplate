@@ -6,12 +6,13 @@
 * 🌊 [TailwindCSS](https://tailwindcss.com/), [tailwindcss-aspect-ratio](https://github.com/tailwindlabs/tailwindcss-aspect-ratio) & [tailwindcss-forms](https://github.com/tailwindlabs/tailwindcss-forms)
 * [Google fonts](https://github.com/nuxt-community/google-fonts-module)
 * 🍍 [Official Vue State & Store Management (Pinia)](https://pinia.vuejs.org/)
+* ✨ [Eslint Nuxt](https://github.com/nuxt/eslint-config)
 
 
 ## TODO
 
 * 📱 Mobile Detect module [@nuxtjs/device](https://www.npmjs.com/package/@nuxtjs/device/v/3.0.0?activeTab=readme)
-* ✨ Eslint & lint-staged
+* ✨ Lint-staged
 * 🐕 Husky
 * [Nuxt Image](https://github.com/nuxt/image#readme)
 
