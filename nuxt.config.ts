@@ -1,6 +1,6 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
+// Doc: https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  modules: ['@nuxtjs/tailwindcss', '@nuxtjs/google-fonts', '@pinia/nuxt'],
+  modules: ['@nuxtjs/tailwindcss', '@nuxtjs/google-fonts', '@pinia/nuxt', '@nuxt/image-edge'],
   app: {
     head: {
       title:
@@ -9,12 +9,30 @@ export default defineNuxtConfig({
     }
   },
 
+  image: {
+    // Unsplash uses the imgix provider
+    // Doc: https://v1.image.nuxtjs.org/providers/unsplash
+    imgix: {
+      baseURL: 'https://images.unsplash.com/'
+    },
+
+    presets: {
+      main: {
+        modifiers: {
+          format: 'webp',
+          fit: 'cover',
+          quality: '60'
+        }
+      }
+    }
+  },
+
   imports: {
     // store directory for pinia
     dirs: ['store']
   },
 
-  // https://pinia.vuejs.org/ssr/nuxt.html#nuxt-js
+  // Doc: https://pinia.vuejs.org/ssr/nuxt.html#nuxt-js
   pinia: {
     autoImports: [
       // automatically imports `defineStore`
@@ -24,7 +42,7 @@ export default defineNuxtConfig({
     ]
   },
 
-  // https://google-fonts.nuxtjs.org/
+  // Doc: https://google-fonts.nuxtjs.org/
   googleFonts: {
     display: 'swap',
     families: {

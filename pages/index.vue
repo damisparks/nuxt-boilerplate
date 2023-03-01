@@ -7,6 +7,7 @@ const productStore = useProductStore()
       <h1 class="text-4xl">
         Welcome to Nuxity
       </h1>
+      <NuxtImg provider="imgix" class="rounded-md my-2" src="photo-1542831371-29b0f74f9713" preset="main" />
       <p>A Nuxt 3 Minimal Starter template packed with a few features.</p>
       <p>
         <span>You have</span>
