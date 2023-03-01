@@ -11,7 +11,10 @@
     "prepare": "husky install"
   },
   "lint-staged": {
-    "*.{js,ts,vue}": "eslint --cache"
+    "*.{js,ts,vue}": [
+      "eslint --cache",
+      "eslint --fix"
+    ]
   },
   "devDependencies": {
     "@nuxt/eslint-config": "0.1.1",
