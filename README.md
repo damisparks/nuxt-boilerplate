@@ -11,9 +11,8 @@
 
 ## TODO
 
+* 🐕 [Husky](https://github.com/typicode/husky) & [Lint-staged](https://github.com/okonet/lint-staged)
 * 📱 Mobile Detect module [@nuxtjs/device](https://www.npmjs.com/package/@nuxtjs/device/v/3.0.0?activeTab=readme)
-* ✨ Lint-staged
-* 🐕 Husky
 * [Nuxt Image](https://github.com/nuxt/image#readme)
 
 ## Setup

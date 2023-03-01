@@ -4,10 +4,17 @@
     "build": "nuxt build",
     "dev": "nuxt dev",
     "lint": "eslint .",
-    "lintfix": "lint --fix",
+    "lintfix": "eslint . --fix",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "*.{js,ts,vue}": [
+      "eslint --cache",
+      "eslint --fix"
+    ]
   },
   "devDependencies": {
     "@nuxt/eslint-config": "0.1.1",
@@ -15,6 +22,8 @@
     "@nuxtjs/google-fonts": "3.0.0-1",
     "@nuxtjs/tailwindcss": "6.4.1",
     "eslint": "8.35.0",
+    "husky": "8.0.3",
+    "lint-staged": "13.1.2",
     "nuxt": "^3.2.2"
   },
   "dependencies": {
