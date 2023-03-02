@@ -8,12 +8,12 @@
 * 🍍 [Official Vue State & Store Management (Pinia)](https://pinia.vuejs.org/)
 * ✨ [Eslint Nuxt](https://github.com/nuxt/eslint-config)
 * 🐕 [Husky](https://github.com/typicode/husky) & [Lint-staged](https://github.com/okonet/lint-staged)
+* Use [Nuxt Image](https://github.com/nuxt/image#readme)
 
 
 ## TODO
 
 * 📱 Mobile Detect module [@nuxtjs/device](https://www.npmjs.com/package/@nuxtjs/device/v/3.0.0?activeTab=readme)
-* [Nuxt Image](https://github.com/nuxt/image#readme)
 
 ## Setup
 
