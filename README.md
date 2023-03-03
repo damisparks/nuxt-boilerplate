@@ -9,6 +9,7 @@
 * ✨ [Eslint Nuxt](https://github.com/nuxt/eslint-config)
 * 🐕 [Husky](https://github.com/typicode/husky) & [Lint-staged](https://github.com/okonet/lint-staged)
 * Use [Nuxt Image](https://github.com/nuxt/image#readme)
+* Error page
 
 
 ## TODO
