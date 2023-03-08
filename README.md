@@ -15,6 +15,7 @@
 ## TODO
 
 * 📱 Mobile Detect module [@nuxtjs/device](https://www.npmjs.com/package/@nuxtjs/device/v/3.0.0?activeTab=readme)
+* Add Demo site
 
 ## Setup
 
