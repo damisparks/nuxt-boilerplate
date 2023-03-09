@@ -1,6 +1,10 @@
 <script lang="ts" setup>
 const productStore = useProductStore()
 const { products } = productStore
+
+const addToCart = () => {
+  console.log('hi')
+}
 </script>
 <template>
   <NuxtLayout>
@@ -9,9 +13,11 @@ const { products } = productStore
         <AppTitle>Play with Nuxity</AppTitle>
         <div class="grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
           <ProductCard :products="products">
-            <!-- <template #default="{item: product}">
-              <span>{{ product }}</span>
-            </template> -->
+            <template #default>
+              <button role="button" class="px-2 py-2 bg-zinc-200 text-gray-700 font-medium rounded-md w-full" @click.self="addToCart">
+                Add to Cart
+              </button>
+            </template>
           </ProductCard>
         </div>
       </div>
