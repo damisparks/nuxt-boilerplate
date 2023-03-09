@@ -1,9 +1,7 @@
 <script lang="ts" setup>
-// const productStore = useProductStore()
-
 const features = [
   'Nuxt 3', 'TailwindCSS', 'Google fonts', 'Pinia',
-  'Eslint Nuxt', 'Husky', 'Nuxt Image', 'Error page'
+  'Eslint Nuxt', 'Husky', 'Nuxt Image', 'Error page', 'Nuxt Icon'
 ]
 
 </script>
@@ -12,9 +10,9 @@ const features = [
     <div class="overflow-hidden bg-gray-50 py-16 lg:py-24">
       <div class="relative mx-auto max-w-xl px-6 lg:max-w-7xl lg:px-8">
         <div>
-          <h2 class="text-center text-3xl font-bold leading-8 tracking-tight  text-gradient sm:text-4xl">
+          <AppTitle>
             Nuxity
-          </h2>
+          </AppTitle>
           <p class="mx-auto mt-4 max-w-3xl text-center text-xl text-gray-600">
             A Nuxt 3 Minimal Starter template packed with a few features.
           </p>
@@ -23,7 +21,7 @@ const features = [
         <!-- image card  -->
         <div class="my-6">
           <NuxtImg
-            class="shadow-lg aspect-square lg:aspect-[2/3] w-52 lg:w-72 mx-auto rounded-2xl flex-none object-cover rotate-6"
+            class="shadow-2xl aspect-square w-52 mx-auto rounded-2xl flex-none object-cover rotate-6"
             provider="imgix"
             width="490"
             loading="lazy"
@@ -35,7 +33,7 @@ const features = [
         </div>
         <!-- image end -->
 
-        <dl class="mt-10 space-y-4 sm:grid sm:grid-cols-2 sm:space-y-0">
+        <dl class="mt-10 space-y-4 sm:grid sm:grid-cols-2 sm:space-y-0 max-w-3xl mx-auto">
           <div
             v-for="(item, index) in features"
             :key="`features-${index}`"
@@ -50,18 +48,5 @@ const features = [
         </dl>
       </div>
     </div>
-
-    <!-- <div class="flex items-center flex-col">
-      <div class="p-4 shadow-lg rounded-md mt-4">
-        <NuxtImg provider="imgix" class="rounded-md my-2" src="photo-1542831371-29b0f74f9713" preset="main" />
-        <p>
-          <span>You have</span>
-          <span class="bg-blue-100 px-3 py-1 rounded text-blue-700 mx-1">
-            {{ productStore.count }}
-          </span>
-          <span>product(s)</span>
-        </p>
-      </div>
-    </div> -->
   </NuxtLayout>
 </template>

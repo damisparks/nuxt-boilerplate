@@ -8,6 +8,6 @@
     <!-- main ends -->
 
     <!-- footer  -->
-    <footer>footer content</footer>
+    <AppFooter />
   </div>
 </template>
