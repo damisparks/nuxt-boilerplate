@@ -1,5 +1,8 @@
 // Doc: https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  nitro: {
+    preset: 'node-server'
+  },
   modules: [
     '@nuxtjs/tailwindcss', '@nuxtjs/google-fonts', '@pinia/nuxt', '@nuxt/image-edge',
     'nuxt-icon'],
