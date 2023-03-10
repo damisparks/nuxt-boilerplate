@@ -1,6 +1,8 @@
 // Doc: https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  modules: ['@nuxtjs/tailwindcss', '@nuxtjs/google-fonts', '@pinia/nuxt', '@nuxt/image-edge'],
+  modules: [
+    '@nuxtjs/tailwindcss', '@nuxtjs/google-fonts', '@pinia/nuxt', '@nuxt/image-edge',
+    'nuxt-icon'],
   app: {
     head: {
       title:

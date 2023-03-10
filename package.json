@@ -25,7 +25,8 @@
     "eslint": "8.35.0",
     "husky": "8.0.3",
     "lint-staged": "13.1.2",
-    "nuxt": "^3.2.2"
+    "nuxt": "^3.2.2",
+    "nuxt-icon": "0.3.2"
   },
   "dependencies": {
     "@pinia/nuxt": "0.4.7",
