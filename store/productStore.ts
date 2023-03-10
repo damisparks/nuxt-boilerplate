@@ -36,12 +36,20 @@ export const useProductStore = defineStore('productStore', {
           imageSrc: 'photo-1604404894533-9ff3362dab13',
           imageAlt: 'Experimental quokkabottle.'
         }
-      ] as IProductItem[]
+      ] as IProductItem[],
+      cartList: [] as IProductItem[]
     }
   },
-  actions: {},
+
+  actions: {
+    addToCart (item: IProductItem) {
+      this.cartList.unshift(item)
+    }
+  },
   getters: {
-    count: state => state.products.length
+    count: state => state.products.length,
+    totalPrice: state => state.cartList.reduce((oldValue, newValue) => oldValue + newValue.price, 0),
+    isEmptyCart: state => state.cartList.length > 0
   }
 })
 

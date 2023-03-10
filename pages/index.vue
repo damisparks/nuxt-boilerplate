@@ -23,8 +23,8 @@ const features = [
           <NuxtImg
             class="shadow-2xl aspect-square w-52 mx-auto rounded-2xl flex-none object-cover rotate-6"
             provider="imgix"
-            width="490"
             loading="lazy"
+            width="490"
             height="500"
             src="photo-1616628188506-4ad99d65640e"
             preset="main"
