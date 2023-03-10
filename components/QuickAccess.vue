@@ -17,7 +17,7 @@ const canQuickAccess = () => {
     <div>
       <button role="button" class="text-cyan-600 rounded-md shadow-xl bg-white px-2 py-1" type="button" @click="canQuickAccess">
         <slot />
-        <Icon class="h-8 w-8 ml-2" name="ph:circles-four-bold" />
+        <Icon class="h-8 w-8 ml-2" name="fluent:cart-24-filled" />
       </button>
     </div>
 

@@ -42,7 +42,12 @@ export const useProductStore = defineStore('productStore', {
   },
 
   actions: {
+    alreadyAdded (item: IProductItem) {
+      return this.cartList.findIndex(el => el.id === item.id)
+    },
     addToCart (item: IProductItem) {
+      const findOne = this.alreadyAdded(item)
+      if (findOne !== -1) { return }
       this.cartList.unshift(item)
     }
   },

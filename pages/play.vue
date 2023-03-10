@@ -18,6 +18,9 @@ const onAddToCart = (product: IProductItem) => {
     <div class="overflow-hidden bg-gray-50 py-16 lg:py-24">
       <div class="relative mx-auto max-w-xl px-6 lg:max-w-7xl lg:px-8 space-y-4">
         <AppTitle>Play with Nuxity</AppTitle>
+        <p class="mx-auto mt-4 max-w-3xl text-center text-xl text-gray-600">
+          Add an item to see how it works
+        </p>
         <div class="grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
           <ProductCard :products="products">
             <template #default="{item: product}">
@@ -32,7 +35,7 @@ const onAddToCart = (product: IProductItem) => {
         <div class="fixed bottom-20 right-4">
           <QuickAccess :show-quick-access="quickView" @update:quickaccess="toggleQuickAccess">
             <template #default>
-              <span class="font-medium">{{ productStore.cartList.length }} items added</span>
+              <span class="font-medium">{{ productStore.cartList.length }} items</span>
             </template>
             <template #items>
               <div>
