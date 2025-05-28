@@ -1,8 +1,5 @@
-// Doc: https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  modules: [
-    '@nuxtjs/tailwindcss', '@nuxtjs/google-fonts', '@pinia/nuxt', '@nuxt/image-edge',
-    'nuxt-icon'],
+  modules: ['@nuxtjs/tailwindcss', '@pinia/nuxt', 'nuxt-icon', '@nuxt/image', '@nuxt/fonts'],
   app: {
     head: {
       title:
@@ -29,29 +26,7 @@ export default defineNuxtConfig({
     }
   },
 
-  imports: {
-    // store directory for pinia
-    dirs: ['store']
-  },
-
-  // Doc: https://pinia.vuejs.org/ssr/nuxt.html#nuxt-js
-  pinia: {
-    autoImports: [
-      // automatically imports `defineStore`
-      // import { defineStore, acceptHMRUpdate } from 'pinia'
-      'defineStore',
-      'acceptHMRUpdate'
-    ]
-  },
-
-  // Doc: https://google-fonts.nuxtjs.org/
-  googleFonts: {
-    display: 'swap',
-    families: {
-      Montserrat: {
-        wght: [300, 400, 500, 700],
-        ital: [400, 500, 700]
-      }
-    }
+  fonts: {
+    families: [{name: 'Montserrat', provider: 'google'}]
   }
 })

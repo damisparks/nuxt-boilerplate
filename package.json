@@ -17,21 +17,30 @@
     ]
   },
   "devDependencies": {
-    "@nuxt/eslint-config": "0.1.1",
-    "@nuxt/image-edge": "1.0.0-27954023.4cee565",
-    "@nuxtjs/eslint-config-typescript": "12.0.0",
-    "@nuxtjs/google-fonts": "3.0.0-1",
-    "@nuxtjs/tailwindcss": "6.4.1",
-    "eslint": "8.35.0",
-    "husky": "8.0.3",
-    "lint-staged": "13.1.2",
-    "nuxt": "^3.2.2",
-    "nuxt-icon": "0.3.2"
+    "@nuxt/eslint-config": "1.4.1",
+    "@nuxt/fonts": "0.11.4",
+    "@nuxt/image": "1.10.0",
+    "@nuxtjs/eslint-config-typescript": "12.1.0",
+    "@nuxtjs/tailwindcss": "6.14.0",
+    "eslint": "9.27.0",
+    "husky": "9.1.7",
+    "lint-staged": "16.1.0",
+    "nuxt": "^3.17.4",
+    "nuxt-icon": "0.6.10"
   },
   "dependencies": {
-    "@pinia/nuxt": "0.4.7",
+    "@pinia/nuxt": "0.11.0",
     "@tailwindcss/aspect-ratio": "0.4.2",
-    "@tailwindcss/forms": "0.5.3",
-    "pinia": "2.0.32"
+    "@tailwindcss/forms": "0.5.10",
+    "pinia": "3.0.2"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "@parcel/watcher",
+      "esbuild",
+      "sharp",
+      "unrs-resolver",
+      "vue-demi"
+    ]
   }
 }
