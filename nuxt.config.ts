@@ -1,5 +1,5 @@
 export default defineNuxtConfig({
-  modules: ['@nuxtjs/tailwindcss', '@pinia/nuxt', 'nuxt-icon', '@nuxt/image', '@nuxt/fonts'],
+  modules: ['@pinia/nuxt', 'nuxt-icon', '@nuxt/image', '@nuxt/fonts', '@nuxt/eslint'],
   app: {
     head: {
       title:
@@ -7,6 +7,8 @@ export default defineNuxtConfig({
       titleTemplate: '%s - Nuxity'
     }
   },
+
+  eslint: { config: { standalone: false } },
 
   image: {
     // Unsplash uses the imgix provider
