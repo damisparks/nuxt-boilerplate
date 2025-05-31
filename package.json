@@ -9,13 +9,12 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "prepare": "husky install"
+    "prepare": "husky"
   },
-  "lint-staged": {
-    "*.{js,ts,vue}": [
-      "eslint --cache",
-      "eslint --fix"
-    ]
+  "dependencies": {
+    "@nuxt/ui": "^3.1.3",
+    "@pinia/nuxt": "0.11.0",
+    "pinia": "3.0.2"
   },
   "devDependencies": {
     "@damisparks/eslint-config": "^2.0.0",
@@ -27,12 +26,7 @@
     "husky": "9.1.7",
     "lint-staged": "16.1.0",
     "nuxt": "^3.17.4",
-    "nuxt-icon": "0.6.10",
     "typescript": "^5.8.3"
-  },
-  "dependencies": {
-    "@pinia/nuxt": "0.11.0",
-    "pinia": "3.0.2"
   },
   "pnpm": {
     "onlyBuiltDependencies": [
@@ -40,7 +34,14 @@
       "esbuild",
       "sharp",
       "unrs-resolver",
-      "vue-demi"
+      "vue-demi",
+      "@tailwindcss/oxide"
+    ]
+  },
+  "lint-staged": {
+    "*.{js,ts,vue}": [
+      "eslint --cache",
+      "eslint --fix"
     ]
   }
 }
