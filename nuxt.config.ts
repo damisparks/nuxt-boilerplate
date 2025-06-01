@@ -1,34 +1,25 @@
 export default defineNuxtConfig({
-  modules: ['@pinia/nuxt', 'nuxt-icon', '@nuxt/image', '@nuxt/fonts', '@nuxt/eslint'],
+  future: {
+    compatibilityVersion: 4,
+  },
+  compatibilityDate: '2025-06-01',
+  devtools: { enabled: true },
+  modules: ['@pinia/nuxt', '@nuxt/image', '@nuxt/fonts', '@nuxt/eslint', '@nuxtjs/device'],
   app: {
     head: {
       title:
         'Nuxity | Opinionated Nuxt3 Minimal Starter template packed with tailwindcss, google fonts, tailwind aspect ratio & more',
-      titleTemplate: '%s - Nuxity'
-    }
+      titleTemplate: '%s - Nuxity',
+    },
   },
+
+  css: ['~/assets/css/main.css'],
 
   eslint: { config: { standalone: false } },
 
-  image: {
-    // Unsplash uses the imgix provider
-    // Doc: https://v1.image.nuxtjs.org/providers/unsplash
-    imgix: {
-      baseURL: 'https://images.unsplash.com/'
-    },
-
-    presets: {
-      main: {
-        modifiers: {
-          format: 'webp',
-          fit: 'cover',
-          quality: '60'
-        }
-      }
-    }
-  },
+  image: { quality: 75 },
 
   fonts: {
-    families: [{name: 'Montserrat', provider: 'google'}]
-  }
+    families: [{ name: 'Montserrat', provider: 'google' }],
+  },
 })
