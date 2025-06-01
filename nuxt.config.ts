@@ -8,7 +8,7 @@ export default defineNuxtConfig({
   app: {
     head: {
       title:
-        'Nuxity | Opinionated Nuxt3 Minimal Starter template packed with tailwindcss, google fonts, tailwind aspect ratio & more',
+        'Nuxity | Opinionated Nuxt3 Minimal Starter template packed with Tailwind CSS v4, NuxtFonts, Pinia & more',
       titleTemplate: '%s - Nuxity',
     },
   },
@@ -18,6 +18,7 @@ export default defineNuxtConfig({
   eslint: { config: { standalone: false } },
 
   image: {
+    provider: 'netlify',
     quality: 75,
     formats: ['webp'],
     domains: ['https://images.unsplash.com'],
