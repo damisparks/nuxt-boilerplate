@@ -1,0 +1,64 @@
+import type { IProductItem } from '@/types'
+
+const PRODUCTS = [
+  {
+    id: 1,
+    name: 'Blue Thermo Bottle',
+    href: '#',
+    price: 48,
+    imageSrc: 'https://images.unsplash.com/photo-1568395216634-ab1b1e848751',
+    imageAlt: 'Blue Thermo Bottle looking nice.',
+  },
+  {
+    id: 2,
+    name: 'Steel water bottle',
+    href: '#',
+    price: 35,
+    imageSrc: 'https://images.unsplash.com/photo-1602143407151-7111542de6e8',
+    imageAlt: 'Steel water bottle with cool green.',
+  },
+  {
+    id: 3,
+    name: 'LARQ Bottle',
+    href: '#',
+    price: 89,
+    imageSrc: 'https://images.unsplash.com/photo-1556814086-bd749c2ceabd',
+    imageAlt: 'LARQ Bottle to the beach and thought about this composition as a juxtaposition of sustainable solutions versus plastic pollution in the water.',
+  },
+  {
+    id: 4,
+    name: 'quokkabottles',
+    href: '#',
+    price: 35,
+    imageSrc: 'https://images.unsplash.com/photo-1604404894533-9ff3362dab13',
+    imageAlt: 'Experimental quokkabottle.',
+  },
+]
+export const useProductStore = defineStore('ProductStore', {
+  state: () => ({
+    products: PRODUCTS as IProductItem[],
+    cartList: [] as IProductItem[],
+  }),
+
+  actions: {
+    alreadyAdded (item: IProductItem) {
+      return this.cartList.findIndex(el => el.id === item.id)
+    },
+    addToCart (item: IProductItem) {
+      const findOne = this.alreadyAdded(item)
+      if (findOne !== -1) {
+        return
+      }
+      this.cartList.unshift(item)
+    },
+  },
+  getters: {
+    count: state => state.products.length,
+    totalPrice: state => state.cartList.reduce((oldValue, newValue) => oldValue + newValue.price, 0),
+    isEmptyCart: state => state.cartList.length > 0,
+  },
+})
+
+if (import.meta.hot) {
+  import.meta.hot.accept(acceptHMRUpdate(useProductStore, import.meta.hot))
+}

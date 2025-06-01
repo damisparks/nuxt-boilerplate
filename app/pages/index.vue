@@ -29,12 +29,10 @@ const features = [
         <div class="my-6">
           <NuxtImg
             class="shadow-2xl aspect-square w-52 mx-auto rounded-2xl flex-none object-cover rotate-6"
-            provider="imgix"
             loading="lazy"
             width="490"
             height="500"
-            src="photo-1616628188506-4ad99d65640e"
-            preset="main"
+            src="https://images.unsplash.com/photo-1616628188506-4ad99d65640e"
             sizes="sm:50vw md:50vw lg:30vw"
           />
         </div>

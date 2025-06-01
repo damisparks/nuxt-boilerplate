@@ -1,8 +1,8 @@
 <script lang="ts" setup>
-import type { IProductItem } from '~/app/types'
+import type { IProductItem } from '@/types'
+import { useProductStore } from '@/store/product-store'
 
 const quickView = ref(true)
-
 const productStore = useProductStore()
 const { products, cartList } = productStore
 
@@ -40,17 +40,16 @@ const onAddToCart = (product: IProductItem) => {
             <template #items>
               <div>
                 <div v-for="{ id, imageSrc, name }, idx in cartList" :key="id">
-                  <div class="flex border-slate-900/10 py-2" :class="idx !== 0 ? 'border-t' : ''">
+                  <div class="flex border-neutral-900/10 py-2" :class="idx !== 0 ? 'border-t' : ''">
                     <NuxtImg
                       class="h-16 w-1/4 rounded-lg"
-                      provider="imgix"
                       loading="lazy"
                       :src="imageSrc"
                     />
                     <span class="w-3/4 ml-3">{{ name }}</span>
                   </div>
                 </div>
-                <span class="px-3 py-2 rounded bg-slate-100 font-medium inline-flex w-full">
+                <span class="px-3 py-2 rounded bg-neutral-100 font-medium inline-flex w-full">
                   Total Price : {{ productStore.totalPrice }}
                 </span>
               </div>
