@@ -22,7 +22,7 @@ export default defineNuxtConfig({
     quality: 75,
     formats: ['webp'],
     domains: ['https://images.unsplash.com'],
-    imgix: { baseURL: 'https://images.unsplash.com' },
+    // imgix: { baseURL: 'https://images.unsplash.com' },
   },
 
   fonts: {
