@@ -1,10 +1,17 @@
 <script lang="ts" setup>
 const features = [
-  'Nuxt 3', 'TailwindCSS', 'Google fonts', 'Pinia',
-  'Eslint Nuxt', 'Husky', 'Nuxt Image', 'Error page', 'Nuxt Icon'
+  'Nuxt 3',
+  'Tailwind CSS v4',
+  'NuxtFonts',
+  'Pinia',
+  'Eslint Nuxt',
+  'Husky',
+  'Nuxt Image',
+  'Error Page',
+  'Nuxt Icon',
 ]
-
 </script>
+
 <template>
   <NuxtLayout>
     <div class="overflow-hidden bg-gray-50 py-16 lg:py-24">

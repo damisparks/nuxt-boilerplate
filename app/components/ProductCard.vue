@@ -1,12 +1,19 @@
 <script lang="ts" setup>
-import { IProductItem } from '~~/types'
+import type { IProductItem } from '~/app/types'
 
-defineProps<{products: IProductItem[]}>()
+defineProps<{ products: IProductItem[] }>()
 </script>
+
 <template>
   <div v-for="product in products" :key="product.id" class="group">
     <div class="aspect-w-3 aspect-h-3 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-w-7 xl:aspect-h-8">
-      <NuxtImg provider="imgix" preset="main" :src="product.imageSrc" :alt="product.imageAlt" class="h-full w-full object-cover object-center group-hover:opacity-75" />
+      <NuxtImg
+        provider="imgix"
+        preset="main"
+        :src="product.imageSrc"
+        :alt="product.imageAlt"
+        class="h-full w-full object-cover object-center group-hover:opacity-75"
+      />
     </div>
     <h3 class="mt-4 text-sm text-gray-700">
       {{ product.name }}

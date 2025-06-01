@@ -1,4 +1,4 @@
-import { IProductItem } from '@/types'
+import type { IProductItem } from '~/app/types'
 
 export const useProductStore = defineStore('productStore', {
   state: () => {
@@ -10,7 +10,7 @@ export const useProductStore = defineStore('productStore', {
           href: '#',
           price: 48,
           imageSrc: 'photo-1568395216634-ab1b1e848751',
-          imageAlt: 'Blue Thermo Bottle looking nice.'
+          imageAlt: 'Blue Thermo Bottle looking nice.',
         },
         {
           id: 2,
@@ -18,7 +18,7 @@ export const useProductStore = defineStore('productStore', {
           href: '#',
           price: 35,
           imageSrc: 'photo-1602143407151-7111542de6e8',
-          imageAlt: 'Steel water bottle with cool green.'
+          imageAlt: 'Steel water bottle with cool green.',
         },
         {
           id: 3,
@@ -26,7 +26,7 @@ export const useProductStore = defineStore('productStore', {
           href: '#',
           price: 89,
           imageSrc: 'photo-1556814086-bd749c2ceabd',
-          imageAlt: 'LARQ Bottle to the beach and thought about this composition as a juxtaposition of sustainable solutions versus plastic pollution in the water.'
+          imageAlt: 'LARQ Bottle to the beach and thought about this composition as a juxtaposition of sustainable solutions versus plastic pollution in the water.',
         },
         {
           id: 4,
@@ -34,10 +34,10 @@ export const useProductStore = defineStore('productStore', {
           href: '#',
           price: 35,
           imageSrc: 'photo-1604404894533-9ff3362dab13',
-          imageAlt: 'Experimental quokkabottle.'
-        }
+          imageAlt: 'Experimental quokkabottle.',
+        },
       ] as IProductItem[],
-      cartList: [] as IProductItem[]
+      cartList: [] as IProductItem[],
     }
   },
 
@@ -47,15 +47,17 @@ export const useProductStore = defineStore('productStore', {
     },
     addToCart (item: IProductItem) {
       const findOne = this.alreadyAdded(item)
-      if (findOne !== -1) { return }
+      if (findOne !== -1) {
+        return
+      }
       this.cartList.unshift(item)
-    }
+    },
   },
   getters: {
     count: state => state.products.length,
     totalPrice: state => state.cartList.reduce((oldValue, newValue) => oldValue + newValue.price, 0),
-    isEmptyCart: state => state.cartList.length > 0
-  }
+    isEmptyCart: state => state.cartList.length > 0,
+  },
 })
 
 if (import.meta.hot) {
