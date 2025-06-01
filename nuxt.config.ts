@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   },
   compatibilityDate: '2025-06-01',
   devtools: { enabled: true },
-  modules: ['@pinia/nuxt', '@nuxt/image', '@nuxt/fonts', '@nuxt/eslint', '@nuxtjs/device'],
+  modules: ['@pinia/nuxt', '@nuxt/image', '@nuxt/fonts', '@nuxt/eslint', '@nuxtjs/device', '@nuxt/ui'],
   app: {
     head: {
       title:
@@ -17,9 +17,19 @@ export default defineNuxtConfig({
 
   eslint: { config: { standalone: false } },
 
-  image: { quality: 75 },
+  image: {
+    quality: 75,
+    formats: ['webp'],
+    domains: ['https://images.unsplash.com'],
+    imgix: { baseURL: 'https://images.unsplash.com' },
+  },
 
   fonts: {
     families: [{ name: 'Montserrat', provider: 'google' }],
+  },
+
+  icon: {
+    clientBundle: { scan: true },
+    provider: 'iconify',
   },
 })
