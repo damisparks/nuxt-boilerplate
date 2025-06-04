@@ -1,4 +1,4 @@
-import type { IProductItem } from '@/types'
+import type { ProductItem } from '@/types'
 
 const PRODUCTS = [
   {
@@ -36,15 +36,15 @@ const PRODUCTS = [
 ]
 export const useProductStore = defineStore('ProductStore', {
   state: () => ({
-    products: PRODUCTS as IProductItem[],
-    cartList: [] as IProductItem[],
+    products: PRODUCTS as ProductItem[],
+    cartList: [] as ProductItem[],
   }),
 
   actions: {
-    alreadyAdded (item: IProductItem) {
+    alreadyAdded (item: ProductItem) {
       return this.cartList.findIndex(el => el.id === item.id)
     },
-    addToCart (item: IProductItem) {
+    addToCart (item: ProductItem) {
       const findOne = this.alreadyAdded(item)
       if (findOne !== -1) {
         return

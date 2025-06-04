@@ -1,13 +1,14 @@
 <script lang="ts" setup>
-import type { IProductItem } from '@/types'
+import type { ProductItem } from '@/types'
 
-defineProps<{ products: IProductItem[] }>()
+defineProps<{ products: ProductItem[] }>()
 </script>
 
 <template>
   <div v-for="product in products" :key="product.id" class="group">
     <div class="aspect-w-3 aspect-h-3 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-w-7 xl:aspect-h-8">
       <NuxtImg
+        provider="netlify"
         :src="product.imageSrc"
         :alt="product.imageAlt"
         class="h-full w-full object-cover object-center group-hover:opacity-75"

@@ -1,9 +1,6 @@
-export interface INavItem {
-  name: string
-  to: string
-}
+export interface NavItem { name: string, to: string }
 
-export interface IProductItem {
+export interface ProductItem {
   id: number
   price: number
   name: string

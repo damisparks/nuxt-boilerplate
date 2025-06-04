@@ -28,6 +28,7 @@ const features = [
         <!-- image card  -->
         <div class="my-6">
           <NuxtImg
+            provider="netlify"
             class="shadow-2xl aspect-square w-52 mx-auto rounded-2xl flex-none object-cover rotate-6"
             loading="lazy"
             width="490"
