@@ -31,7 +31,7 @@ const onAddToCart = (product: ProductItem) => {
           </ProductCard>
         </div>
       </div>
-      <div v-if="productStore.isEmptyCart" class="relative">
+      <div v-if="productStore.hasItemsInCart" class="relative">
         <div class="fixed bottom-20 right-4">
           <QuickAccess :show-quick-access="quickView" @update:quickaccess="toggleQuickAccess">
             <template #default>

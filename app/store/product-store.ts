@@ -55,7 +55,7 @@ export const useProductStore = defineStore('ProductStore', {
   getters: {
     count: state => state.products.length,
     totalPrice: state => state.cartList.reduce((oldValue, newValue) => oldValue + newValue.price, 0),
-    isEmptyCart: state => state.cartList.length > 0,
+    hasItemsInCart: state => state.cartList.length > 0,
   },
 })
 
