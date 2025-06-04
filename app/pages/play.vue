@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import type { IProductItem } from '@/types'
+import type { ProductItem } from '@/types'
 import { useProductStore } from '@/store/product-store'
 
 const quickView = ref(true)
@@ -8,7 +8,7 @@ const { products, cartList } = productStore
 
 const toggleQuickAccess = () => (quickView.value = !quickView.value)
 
-const onAddToCart = (product: IProductItem) => {
+const onAddToCart = (product: ProductItem) => {
   productStore.addToCart(product)
 }
 </script>
@@ -24,9 +24,9 @@ const onAddToCart = (product: IProductItem) => {
         <div class="grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
           <ProductCard :products="products">
             <template #default="{ item: product }">
-              <button role="button" class="px-2 py-2 bg-zinc-200 text-gray-700 font-medium rounded-md w-full" @click="onAddToCart(product)">
+              <UButton role="button" @click="onAddToCart(product)">
                 Add to Cart
-              </button>
+              </UButton>
             </template>
           </ProductCard>
         </div>
@@ -42,6 +42,7 @@ const onAddToCart = (product: IProductItem) => {
                 <div v-for="{ id, imageSrc, name }, idx in cartList" :key="id">
                   <div class="flex border-neutral-900/10 py-2" :class="idx !== 0 ? 'border-t' : ''">
                     <NuxtImg
+                      provider="netlify"
                       class="h-16 w-1/4 rounded-lg"
                       loading="lazy"
                       :src="imageSrc"

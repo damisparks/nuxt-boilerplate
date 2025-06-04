@@ -19,10 +19,9 @@ export default defineNuxtConfig({
 
   image: {
     provider: 'netlify',
+    domains: ['images.unsplash.com'],
     quality: 75,
     formats: ['webp'],
-    domains: ['https://images.unsplash.com'],
-    // imgix: { baseURL: 'https://images.unsplash.com' },
   },
 
   fonts: {

@@ -1,7 +1,7 @@
 <script lang="ts" setup>
-import type { INavItem } from '../types'
+import type { NavItem } from '../types'
 
-const navItems: INavItem[] = [
+const navItems: NavItem[] = [
   { name: 'Home', to: '/' },
   { name: 'Play', to: '/play' },
 ]
